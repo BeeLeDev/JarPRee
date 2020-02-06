@@ -1,0 +1,24 @@
+package jarpree;
+
+public class Ideas {
+    // 3 Simple Classes, Warrior, Mage, Archer and something else (maybe rogue for evasion and crit)
+    // No run just attack, spells, items for now
+    // Add turns with i = 0, i++, when # is odd or even it's certain characters turn -- completed
+    // Magic effective, resistant, and normal
+    // Give monster differnt sets of attack instead of 1 -- eh, should add more
+    // Maybe a shop so they say players name so we not lonely ;(
+    // Tommy suggest miss and crit, i did it -- need to add to both you and monster// i already had that shit implemented
+    // tommy said status ailments like freeze and burn, i did freeze to skip a turn, burn is fucking dumb
+    
+}
+
+/* 
+
+    rand.nextInt(1) + 25 // makes # range from 25 - 25 
+    rand.nextInt(2) + 1 // makes # range from 1 - 2
+    rand.nextInt(5) + 5 // makes # range from 5 - 9
+    rand.nextInt(2) + 5 // makes # range from 5 - 6
+    //looks like ((#) + #) - 1 is what makes the highest # since number starts from 0               
+    // (+ #) is the lowest # it can be
+
+*/
