@@ -8,7 +8,7 @@ public class Game {
 
     Scanner sc = new Scanner(System.in);
     Random rand = new Random();
-    Methods methods = new Methods();
+    Methods method = new Methods();
 
     public void prompt() {
 
@@ -19,7 +19,7 @@ public class Game {
         System.out.println("\n------------------------------------------------------------------\n");
         System.out.println("Select an action by typing a number and hit enter.");
         try {
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(0);
         } catch (InterruptedException ex) {
             Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -43,27 +43,27 @@ public class Game {
             int pSelect = sc.nextInt();
             switch (pSelect) {
             case 1:
-                methods.pAttack();
+                method.pAttack();
                 break;
             case 2:
-                methods.pSpellSelection();
+                method.pSpellSelection();
                 break;
             case 3:
-                methods.Status();
+                method.Status();
                 break;
             case 4:
-                methods.inventory();
+                method.inventory();
                 break;
             case 1022:
-                methods.uwu();
+                method.uwu();
                 break;
             default:
-                System.out.println("\nNot a valid option.");
+                System.out.println("Not a valid option.");
                 break;
             } // switch
         } catch (java.util.InputMismatchException ex) {
             sc.nextLine();
-            System.out.println("\nTry again.\n");
+            System.out.println("Try again.");
         } // catch
     } // selection
 

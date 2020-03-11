@@ -1,20 +1,23 @@
 public class Monsters {
 
-    static int mHealth = 150; // player doesn't know until they identify
-    String mName = "Mon";
-    static boolean visibleHP = false; //get this to change somehow
+    static int mHealth = 150; // player doesn't know until they identify, health for THIS MON, PLACE INTO AN OBJECT LIKE TIM()
+    String mName = "Bon";
+    static boolean visibleHP = false;
     boolean fire = true; // fire weakness
+    boolean hasWeakness = true;
+    String monWeakness[] = {"Fire"}; //update identify when creating more than one mon
+    static boolean hasAilment = false;
 
     public void Tim() {
 
-    }
+    }// Tim
 
-    public void setmHealth(int mHealth) {
-        this.mHealth = mHealth;
-    }
+    public void monIsDead() {
+        if (mHealth <= 0) {
+            mHealth = 0;
+            System.out.println("You killed " + mName + "!");
+            System.exit(0);
+        }// if
+    }// monIsDead
 
-    public void setvisibleHP(boolean visibleHP) {
-        this.visibleHP = visibleHP;
-    }
-
-} //class Monsters
+}// class Monsters

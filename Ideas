@@ -1,24 +1,47 @@
 package jarpree;
 
-public class Ideas {
+public class Ideas 
+{
     // 3 Simple Classes, Warrior, Mage, Archer and something else (maybe rogue for evasion and crit)
+    // Add stats, strength, speed, defense, etc, look up basic rpg stats
     // No run just attack, spells, items for now
-    // Add turns with i = 0, i++, when # is odd or even it's certain characters turn -- completed
+    // Add turns with i = 0, i++, when # is odd or even it's certain characters turn // completed
     // Magic effective, resistant, and normal
-    // Give monster differnt sets of attack instead of 1 -- eh, should add more
+    // Give monster differnt sets of attack instead of 1 // eh, should add more
     // Maybe a shop so they say players name so we not lonely ;(
-    // Tommy suggest miss and crit, i did it -- need to add to both you and monster// i already had that shit implemented
-    // tommy said status ailments like freeze and burn, i did freeze to skip a turn, burn is fucking dumb
-    
-}
+    // Tommy suggest miss and crit, i did it // need to add to both you and monster // i already had that shit implemented
+    // tommy said status ailments like freeze and burn, i did freeze to skip a turn, burn is fucking dumb // 1/13/2020 haha i did it pussy
+    // un-hardcode inventory items, so it'll display what you do have and not just a set list
+    // move all stat-like variables into methods for easier access of location, like mHealth to Methods under mName
+    // organize the variables, group them or something to make it known what the variable type is (not data type)
+    // check to see if monster dies globally instead of placing an if statement for it in every attacking code // kinda did it, just need more
+       mons to do it on
+    // make it so crit and miss don't happen at the same time // that took longer than it should
+    // organize code so identical codes go near eachother like checking crit and miss near its own calculations
+}// class Ideas
+ 
 
-/* 
+
+    /*********************
+        RANDOM NUMBERS
+    *********************/
 
     rand.nextInt(1) + 25 // makes # range from 25 - 25 
     rand.nextInt(2) + 1 // makes # range from 1 - 2
     rand.nextInt(5) + 5 // makes # range from 5 - 9
     rand.nextInt(2) + 5 // makes # range from 5 - 6
-    //looks like ((#) + #) - 1 is what makes the highest # since number starts from 0               
+    // looks like ((#) + #) - 1 is what makes the highest # since number starts from 0               
     // (+ #) is the lowest # it can be
 
-*/
+
+
+    /***********************
+        STATIC VARIABLES
+    ***********************/
+
+    // if variable int X = 150 is static, the classes that use variable X share it's value, 
+    // when it's not a static and is used in 2 different classes, they basically duplicate variable X into another class so now each class
+    // has it's own variable X with it's original value
+    // if class A subtracts 10 from variable X, variable X = 140 // variable int X = 150
+    // if class B subtracts 15 from variable X, variable X = 135 
+    // if variable X IS STATIC, and both classes do the same subtraction, Variable X = 125
